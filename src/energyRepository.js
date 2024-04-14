@@ -1,7 +1,7 @@
 const Pool = require('pg').Pool
 const pool = new Pool({
   user: 'leitor',
-  host: 143.107.102.8,
+  host: '143.107.102.8',
   database: 'data-energia',
   password: 'garsoftData2024',
   port: 5432,
