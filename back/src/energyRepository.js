@@ -10,7 +10,7 @@ const pool = new Pool({
 const getConsumo = async () => {
     try {
       return await new Promise(function (resolve, reject) {
-        pool.query("SELECT * FROM consumo", (error, results) => {
+        pool.query("SELECT * FROM consumo ORDER BY timestamp", (error, results) => {
           if (error) {
             reject(error);
           }
