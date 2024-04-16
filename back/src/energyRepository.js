@@ -6,12 +6,12 @@ const pool = new Pool({
   password: 'garsoftData2024',
   port: 5432,
 });
-// WHERE timestamp BETWEEN '2023/02/25' AND '2023/02/27' 
+// WHERE timestamp BETWEEN '2022-11-04T23:45:00.000Z' AND '2022-11-05T23:45:00.000Z' 
 
 const getConsumo = async () => {
     try {
       return await new Promise(function (resolve, reject) {
-        pool.query("SELECT * FROM consumo ORDER BY timestamp", (error, results) => {
+        pool.query("SELECT * FROM consumo WHERE timestamp BETWEEN '2022-11-04T23:45:00.000Z' AND '2022-11-05T23:45:00.000Z' ORDER BY timestamp", (error, results) => {
           if (error) {
             reject(error);
           }
