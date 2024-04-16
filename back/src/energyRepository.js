@@ -10,7 +10,7 @@ const pool = new Pool({
 const getConsumo = async () => {
     try {
       return await new Promise(function (resolve, reject) {
-        pool.query("SELECT * FROM consumo where Date between '2023/02/25' and '2023/02/27' ORDER BY timestamp", (error, results) => {
+        pool.query("SELECT * FROM consumo where timestamp between '2023/02/25' and '2023/02/27' ORDER BY timestamp", (error, results) => {
           if (error) {
             reject(error);
           }
