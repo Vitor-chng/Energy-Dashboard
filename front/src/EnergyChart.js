@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+// import Chart from 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 
 const EnergyChart = ({dataPessoas,dataEnergia}) => {
@@ -53,7 +54,7 @@ const EnergyChart = ({dataPessoas,dataEnergia}) => {
     return (
         <div>
             <h2>Consumo de Energia</h2>
-            <Line data={data} options={{ scales: { y: { beginAtZero: true } } }} />
+            <Line data={data} />
         </div>
     );
 };
