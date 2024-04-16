@@ -38,9 +38,9 @@ const EnergyChart = ({dataPessoas,dataEnergia}) => {
         datasets: [
           {
             label: "Energia",
-            // data: dataEnergia,
-            // teste
-            data: [101,10,1,1,1,40,315,2100,2120,1901,1010,70,401,510,45,601,2100,220,190,70,30,20,15],
+            data: dataEnergia, // quebrado para ver descomente o teste
+            // teste 
+            // data: [101,10,1,1,1,40,315,2100,2120,1901,1010,70,401,510,45,601,2100,220,190,70,30,20,15],
             fill: true,
             backgroundColor: "rgba(75,192,192,0.2)",
             borderColor: "rgba(75,192,192,1)"
@@ -56,9 +56,14 @@ const EnergyChart = ({dataPessoas,dataEnergia}) => {
 
     return (
         <div>
-            <h2>Consumo de Energia</h2>
+            <h2>Consumo de Energia e Trafego de Pessoas</h2>
             <Line data={data} />
         </div>
+        // só fazer linha unica dividindo o consumo pelas pessoas (ou pessoas pelo consumo vcs q sabem)
+        // <div>
+        //     <h2>Consumo x Pessoa</h2>
+        //     <Line data={"dataPessoas/dataEnergia"} />
+        // </div>
     );
 };
 
