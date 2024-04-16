@@ -29,7 +29,8 @@ function App() {
             console.log(response.data)
             return (
               <EnergyChart
-                data = {response.data}
+              dataEnergia = {response.data}
+              dataPessoas = {mockData}
               />)
           }
           return (<div>Default message before request is made.</div>)

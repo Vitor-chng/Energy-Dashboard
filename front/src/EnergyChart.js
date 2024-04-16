@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Line } from 'react-chartjs-2';
 
 const EnergyChart = ({dataPessoas,dataEnergia}) => {
-    const [chartData, setChartData] = useState({});
+    // const [chartData, setChartData] = useState({});
 
     // useEffect(() => {
     //     const fetchData = async () => {
