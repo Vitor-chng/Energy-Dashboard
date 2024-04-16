@@ -1,7 +1,7 @@
 const express = require('express')
+const cors = require('cors');
 const app = express()
 const port = 3001
-
 app.get('/', (req, res) => {
   res.status(200).send('Automação S2');
 })
@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
 const energy_model = require('./energyRepository')
 
 app.use(express.json())
+app.use(cors({
+  origin: '*'
+}));
 
 app.get('/consumo', (req, res) => {
     energy_model.getConsumo()
