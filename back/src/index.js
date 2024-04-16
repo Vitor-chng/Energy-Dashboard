@@ -1,5 +1,4 @@
 const express = require('express')
-const cors = require('cors');
 const app = express()
 const port = 3001
 app.get('/', (req, res) => {
@@ -8,10 +7,10 @@ app.get('/', (req, res) => {
 
 const energy_model = require('./energyRepository')
 
-app.use(express.json())
-app.use(cors({
-  origin: '*'
-}));
+var cors = require('cors')
+
+var app = express()
+app.use(cors())
 
 app.get('/consumo', (req, res) => {
     energy_model.getConsumo()
