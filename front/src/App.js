@@ -18,6 +18,7 @@ function App() {
             return (<div>Loading...</div>)
           }
           else if(response !== null) {
+            console.log(response)
             return (<div>{response.data.message} <button onClick={() => makeRequest({ params: { refresh: true } })}>Refresh</button></div>)
           }
           return (<div>Default message before request is made.</div>)
