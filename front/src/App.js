@@ -5,10 +5,10 @@ import EnergyChart from './EnergyChart';
 
 function App() {
 
-  const mockData = {
+  const mockData = 
     // quantad pessoas passam pelo onibus a cada hora do dia (comeca 0h)
     [10,0,0,0,0,40,35,200,220,190,100,70,40,50,45,60,200,220,190,70,30,20,15]
-  }
+ 
 
 
 
