@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart }            from 'react-chartjs-2'
+import "chart.js/auto";
+
+import { Line } from "react-chartjs-2";
 
 const EnergyChart = ({dataPessoas,dataEnergia}) => {
     // const [chartData, setChartData] = useState({});
