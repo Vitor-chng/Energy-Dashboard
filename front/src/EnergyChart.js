@@ -36,7 +36,7 @@ const EnergyChart = ({dataPessoas,dataEnergia}) => {
             label: "Energia",
             // data: dataEnergia,
             // teste
-            data: [101,10,01,01,01,40,315,2100,2120,1901,1010,70,401,510,45,601,2100,220,190,70,30,20,15],
+            data: [101,10,1,1,1,40,315,2100,2120,1901,1010,70,401,510,45,601,2100,220,190,70,30,20,15],
             fill: true,
             backgroundColor: "rgba(75,192,192,0.2)",
             borderColor: "rgba(75,192,192,1)"
